@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS | Selector</title>
+</head>
+<body>
+    <div>
+        <!-- Selector 
+            
+            1. Universal Selector - done 
+            2. Class Selector - done 
+            3. Id Selector - done
+            4. Element Selector - done
+            5. Attribute Selector
+            6. Descendent Selector
+            7. Child Selector
+            8. Multiple/Group Selector
+        
+        -->
+
+
+        <!-- Element Selector -->
+
+        <style>
+            h1{
+                color: red;
+                
+            }
+        </style>
+        <h1>THis is an example of Element Selector</h1>
+
+        <!-- ID selector , ids are selected by using ' # ' -->
+         <style>
+            #id-selector{
+                color: green;
+            }
+         </style>
+         <h2 id="id-selector">THis is an example of ID Selector</h2>
+
+        <!-- Class Selector , classes are selected by using '.' -->
+         <style>
+            .class-selector{
+                color: goldenrod;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+         </style>
+         <h2 class="class-selector">THis is an example of Class Selector</h2>
+
+
+         <!-- Universal selector , universal selector is selected by using '*' -->
+
+         <style>
+            *{
+                background-color: blanchedalmond;
+                font-family: cursive;
+                margin: 0 50px 0 50px;
+            }
+         </style>
+
+
+         <br><hr><br>
+
+         <!-- Descendent Selector -->
+
+         <style>
+            .desc{
+                background-color: white;
+                padding: 10px;
+                margin: 10px;
+                border-radius: 10%;
+                width: 400px;
+                height: 420px;
+            }
+
+            .desc img{
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+            }
+
+            .desc h3{
+                color: red;
+                background-color: white;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-weight: bolder;
+            }
+
+            .desc p{
+                color: black;
+                background-color: white;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: 10px;
+            }
+
+            .desc a{
+                color: rgb(29, 75, 224);
+                background-color: white;
+                text-decoration: none;
+            }
+
+            .desc a:hover{
+                color: rgb(255, 148, 26);
+                text-decoration: underline;
+            }
+         </style>
+         <h1 style="color: rgb(139, 19, 61);">Descendent Selector</h1>
+        <div class="desc">
+            
+            <img src="https://images.immediate.co.uk/production/volatile/sites/30/2022/08/Fish-Tacos-1337495.jpg?quality=90&resize=708,643" alt="dinner">
+            <hr>
+            <h3>Dinner</h3><br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla.<br>
+                <a href="#">read more</a></p>
+        </div>
+
+        <br><hr><br>
+
+        <!-- Child Selector -->
+
+        <style>
+            .child{
+                background-color: white;
+                padding: 10px;
+                margin: 10px;
+                border-radius: 10%;
+                width: 400px;
+                height: 420px;
+            }
+
+            .child > img{
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+            }
+
+            .child > h3{
+                color: red;
+                background-color: white;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-weight: bolder;
+            }
+
+            .child > p{
+                color: black;
+                background-color: white;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: 10px;
+            }
+
+            .child > a{
+                color: rgb(29, 75, 224);
+                background-color: white;
+                text-decoration: none;
+            }
+
+            .child > a:hover{
+                color: rgb(255, 148, 26);
+                text-decoration: underline;
+            }
+        </style>
+        <div class="child">
+             
+            <img src="https://images.immediate.co.uk/production/volatile/sites/30/2022/08/Fish-Tacos-1337495.jpg?quality=90&resize=708,643" alt="dinner">
+            <hr>
+            <h3>Dinner</h3><br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla.<br>
+                <a href="#">read more</a></p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+<!-- <style>
+   
+</style>
+<div class="desc">
+    <div class="desc2">
+        <div class="child1">
+            <h1>
+
+            </h1>
+
+            <img src="" alt="">
+
+            <p>
+
+            </p>
+        </div>
+    </div>
+</div> -->
